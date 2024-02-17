@@ -27,10 +27,10 @@ spec:
           resources:
             requests:
               cpu: 500m
-              memory: 500M
+              memory: 250M
             limits:
               cpu: 1
-              memory: 1Gi
+              memory: "250m"
 #here we mount prometheus config map as volume on prometheus container on /etc...              
           volumeMounts:
             - name: prometheus-config-volume
